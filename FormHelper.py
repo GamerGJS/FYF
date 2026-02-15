@@ -34,7 +34,7 @@ while cap.isOpened():
             
             # --- MODIFIED: Only play if it hasn't played yet ---
             if not sound_played:
-                playsound('GREEN.mp3', block=False)
+                playsound('assets/GREEN.mp3', block=False)
                 sound_played = True 
         else:
             line_color = (0, 0, 255)  # Red
@@ -56,4 +56,3 @@ while cap.isOpened():
 
 cap.release()
 cv2.destroyAllWindows()
-
